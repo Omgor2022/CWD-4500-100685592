@@ -56,6 +56,6 @@ function herbalbeauty_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function herbalbeauty_customize_preview_js() {
-	wp_enqueue_script( 'herbalbeauty-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+	wp_enqueue_script( 'herbalbeauty-customizer', get_template_directory_uri() . 'assets/js/customizer.js', array( 'customize-preview' ), HERBALBEAUTY_VERSION, true );
 }
 add_action( 'customize_preview_init', 'herbalbeauty_customize_preview_js' );
