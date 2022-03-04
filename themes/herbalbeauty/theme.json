@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json"
+    "version": 2,
+    "settings": {
+        "color": {
+            "custom": false,
+            "defaultpalette": false,
+            "palette": [
+                {
+                    "color": "#000000",
+                    "name": "Black",
+                    "slug": "black"
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "White",
+                    "slug": "white"
+                }
+                {
+                    "color": "#ff5252",
+                    "name": "Grapefruit",
+                    "slug": "grapefruit"
+                }
+            ]
+        }
+        "layout": {
+            "contentSize": "1000px",
+            "wideSize": "1200px"
+        }
+    }
+}
