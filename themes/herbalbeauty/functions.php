@@ -139,7 +139,7 @@ function herbalbeauty_scripts() {
 
 	wp_enqueue_style(
 		'foundation-style',
-		get_template_directory_uri() . '/assets/css/vendor/foundation.min.css'
+		get_template_directory_uri() . '/assets/css/vendor/foundation.min.css',
 		array(),
 		'6.7.4'
 	   );
@@ -148,7 +148,7 @@ function herbalbeauty_scripts() {
 		'what-input-script', 
 		get_template_directory_uri() . '/assets/js/vendor/what-input.js',
 		array( 'jquery' ), 
-		'5.2.10'
+		'5.2.10',
 		true
 	);
 
@@ -156,7 +156,7 @@ function herbalbeauty_scripts() {
 		'foundation-script', 
 		get_template_directory_uri() . '/assets/js/vendor/foundation.min.js',
 		array( 'jquery', 'what-input-script' ), 
-		'6.7.4'
+		'6.7.4',
 		true
 	);
 
