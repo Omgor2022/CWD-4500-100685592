@@ -152,6 +152,11 @@ function herbalbeauty_scripts() {
 		true
 	);
 
+	wp_enqueue_style(
+		'woocommerce-style',
+		get_template_directory_uri() . '/assets/css/woocommerce.css',
+	   );
+
 	wp_enqueue_script(
 		'foundation-script', 
 		get_template_directory_uri() . '/assets/js/vendor/foundation.min.js',
@@ -188,3 +193,7 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/block-editor.php';
 
+/**
+ * woocommerce additions.
+ */
+require get_template_directory() . '/inc/woocommerce.php';
