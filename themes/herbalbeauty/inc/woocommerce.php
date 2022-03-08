@@ -38,7 +38,7 @@
   function harbelbeauty_add_sample_text() {
       echo '<p style="color:#ff5252;"><b>You Will Love Our Products</b></p>';
   }
-  add_action( 'woocommerce_before_add_to_cart_form', 'add_sample_text', 10 );
+  add_action( 'woocommerce_before_add_to_cart_form', 'herbalbeauty_add_sample_text', 10 );
 
   /**
    * Remove tab data
