@@ -50,6 +50,9 @@ function herbalbeauty_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'herbalbeauty' ),
+			'menu-secondary' => esc_html__( 'secondary', 'herbalbeauty' ),
+			'menu-footer' => esc_html__( 'footer', 'herbalbeauty' ),
+			'menu-social' => esc_html__( 'social', 'herbalbeauty' ),
 		)
 	);
 
