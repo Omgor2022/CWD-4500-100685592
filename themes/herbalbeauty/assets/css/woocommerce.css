@@ -46,6 +46,7 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page {
 li.menu-item.menu-item-type-post_type.menu-item-object-page a {
     color: #333;
     font-weight: 600;
+    transition: 0.43s;
 }
 
 .site-branding img {
@@ -121,7 +122,17 @@ main.site-main {
     display: inline-block;
     border-bottom: 2px solid #ffcca7;
 }
-
+@media screen and (max-width : 576px){
+    main.site-main {
+        padding: 0 15px;
+    }
+    header#masthead{
+        padding: 0 20px;
+    }
+    li.menu-item.menu-item-type-post_type.menu-item-object-page{
+        padding: 5px 10px ;
+    }
+}
 a.button.product_type_grouped {
     display: inline-block;
     background: #e9b28b;
@@ -172,6 +183,7 @@ button.wsf-button.wsf-button-full.wsf-button-primary:hover {
     padding: 20px !important;
     border-radius: 20px;
     box-shadow: 0 0 9px #ccc;
+    margin-bottom: 15px;
 }
 
 .wp-block-columns.has-tertiary-background-color.has-background .wp-block-column p strong {
