@@ -38,7 +38,7 @@
   function harbelbeauty_add_sample_text() {
       echo '<p style="color:#ff5252;"><b>You Will Love Our Products</b></p>';
   }
-  add_action( 'woocommerce_before_add_to_cart_form', 'herbalbeauty_add_sample_text', 10 );
+//   add_action( 'woocommerce_before_add_to_cart_form', 'herbalbeauty_add_sample_text', 10 );
 
   /**
    * Remove tab data
@@ -47,4 +47,4 @@
   function harbelbeauty_add_content() {
       echo '<div class="content">' . get_the_content() . '</div>';
   }
-  add_action( 'woocommerce_after_single_product_summary', 'herbalbeauty_add_content', 10 );
+//   add_action( 'woocommerce_after_single_product_summary', 'herbalbeauty_add_content', 10 );

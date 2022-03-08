@@ -27,7 +27,33 @@ get_header();
 				</header>
 				<?php
 			endif;
+			?>
+			
+			<div class="row">
+				<?php
+				$index = 0;
+				$no_of_columns = 3;
 
+				// Strat the loop.
+				while ( have_posts() ) : the_post();
+
+					if ( 0 === $index % $no_of_columns ) {
+					?>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+				}
+
+					$index++;
+
+					if ( 0 !== $index   ) {
+					?>
+						</div>
+					<?php
+				}
+
+					endwhile;
+					?>
+				</div>
+			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
