@@ -30,27 +30,29 @@ get_header();
 			?>
 			
 			<div class="row">
-				<?php
-				$index = 0;
-				$no_of_columns = 3;
+						<?php
+						$index         = 0;
+						$no_of_columns = 2;
 
-				// Strat the loop.
-				while ( have_posts() ) : the_post();
+						while ( have_posts() ) : the_post();
 
-					if ( 0 === $index % $no_of_columns ) {
-					?>
-					<div class="col-lg-4 col-md-6 col-sm-12">
-				}
+							if ( 0 === $index % $no_of_columns ) {
+								?>
+								<div class="col-lg-4 col-md-6 col-sm-12">
+								<?php
+							}
 
-					$index++;
+							get_template_part( 'template-parts/content' );
 
-					if ( 0 !== $index   ) {
-					?>
-						</div>
-					<?php
-				}
+							$index ++;
 
-					endwhile;
+							if ( 0 !== $index && 0 === $index % $no_of_columns ) {
+								?>
+								</div>
+								<?php
+							}
+
+						endwhile;
 					?>
 				</div>
 			<?php
