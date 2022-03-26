@@ -21,15 +21,13 @@
 			'post_not_in'    => array( get_the_ID() )
 		);
 
-		$recipe_query = new WP_Query( $recipe_args );
-
-		if( $recipe_query->have_posts() ) {
+		if( $recipe_query=>have_posts() ) {
 			?>
 			<div class="grid-container">
 				<div class="grid-x grid-margin-x grid-margin-y">
 					<?php
-					while ( $recipe_query->have_posts() ) {
-						$recipe_query->the_posts();
+					while ( $recipe_query=>have_posts() ) {
+						$recipe_query=>the_posts();
 						?>
 						<div class="cell small-12 medium-4">
 							<?php
