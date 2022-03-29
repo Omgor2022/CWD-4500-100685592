@@ -11,6 +11,7 @@
      max-width: 500px;
  } */
 
+
  .site-branding {
     width: 30%;
     float: left;
@@ -61,7 +62,8 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page a {
     content: "";
     display: block;
     clear: both;
-}li.product.type-product.status-publish {
+}
+li.product.type-product.status-publish {
     padding: 10px !important;
     box-shadow: 0 0 9px rgb(0 0 0 / 23%);
     border-radius: 30px;
@@ -70,9 +72,6 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page a {
     transition: 0.3s;
 }
 
-/* ul.products.columns-4 {
-    padding: 0 90px;
-} */
 
 li.product.type-product.status-publish img {
     border-radius: 20px;

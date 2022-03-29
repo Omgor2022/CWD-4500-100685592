@@ -21,3 +21,115 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
+/* custom footer css */
+footer {
+    background: #fff8f2;
+    padding: 40px 70px;
+    border-top: 2px solid #ffffff;
+    box-shadow: inset 1px 5px 9px rgb(0 0 0 / 25%);
+}
+
+footer:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+div#footer-1, div#footer-2, div#footer-3, div#footer-4 {
+    width: 25%;
+    float: left;
+}
+
+div#footer-1 ul, div#footer-2 ul, div#footer-3 ul {
+    list-style: none;
+}
+
+div#footer-1 ul li, div#footer-2 ul li, div#footer-3 ul li {
+    color: #5e5e5e;
+    font-weight: 700;
+}
+
+footer.entry-footer {
+    display: none;
+}
+
+/* Home page Product card style */
+li.wc-block-grid__product {
+    padding: 10px !important;
+    box-shadow: 0 0 9px rgb(0 0 0 / 23%);
+    border-radius: 30px;
+    /* overflow: hidden; */
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+li.wc-block-grid__product img {
+    border-radius: 20px;
+}
+
+li.wc-block-grid__product {
+    width: 30% !important;
+    max-width: 30% !important;
+    margin-right: 38px;
+    margin-bottom: 20px;
+}
+.newsletter {
+    padding: 50px;
+    background: #eee;
+}
+
+.newsletter .col-lg-6 {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.newsletter .row:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+button#newsletter-submit {
+    background: #f4924b;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.newsletter-text h4 {
+    font-weight: 900;
+    color: #6e6e6e;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+}
+
+
+/* Responsive css */
+
+@media screen and (max-width : 991px){
+    li.wc-block-grid__product {
+        margin-right: 10px !important;
+    }
+}
+
+@media screen and (max-width : 768px){
+    li.wc-block-grid__product {
+        width: 50% !important;
+        max-width: 43% !important;
+        margin-right: 10px !important;
+        margin-bottom: 20px;
+        float: left;
+        margin-left: 10px !IMPORTANT;
+    }
+}
+
+@media screen and (max-width : 576px){
+    div#footer-1, div#footer-2, div#footer-3, div#footer-4 {
+        width: 100%;
+    }
+    
+}   
