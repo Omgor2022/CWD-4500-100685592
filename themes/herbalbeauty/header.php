@@ -44,9 +44,9 @@
 				<p class="site-description"><?php echo $herbalbeauty_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-				<a class="search_btn"><i class="fa fa-search"></i></a>
-				<a class="search_btn"><i class="fa fa-shopping-cart"></i></a>
-				<a class="search_btn"><i class="fa fa-user"></i></a>
+		<a class="menu_icon search_btn"><i class="fa fa-search"></i></a>
+				<a href="cart" class="menu_icon cart_btn"><i class="fa fa-shopping-cart"></i></a>
+				<a href="account"class="menu_icon user_btn"><i class="fa fa-user"></i></a>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'herbalbeauty' ); ?></button>
 			<?php
