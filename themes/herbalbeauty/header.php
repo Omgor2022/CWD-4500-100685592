@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -44,7 +44,8 @@
 				<p class="site-description"><?php echo $herbalbeauty_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
+				<a class="search_btn"><i class="fa fa-search"></i></a>
+				<a class="search_btn"><i class="fa fa-shopping-cart"></i></a>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'herbalbeauty' ); ?></button>
 			<?php

@@ -32,8 +32,15 @@ footer {
 
 footer:after {
     display: block;
-    content: "";
+    content: "© 2022 Herbal Beauty. All Rights Reserved";
     clear: both;
+    background: #eee;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #bc4f00;
+    margin-bottom: -20px;
 }
 
 div#footer-1, div#footer-2, div#footer-3, div#footer-4 {
@@ -51,6 +58,10 @@ div#footer-1 ul li, div#footer-2 ul li, div#footer-3 ul li {
 }
 
 footer.entry-footer {
+    display: none;
+}
+footer.comment-meta:after {
+    content: "";
     display: none;
 }
 
@@ -91,6 +102,9 @@ li.wc-block-grid__product {
     content: "";
     clear: both;
 }
+ol.comment-list {
+    margin-top: 180px;
+}
 
 button#newsletter-submit {
     background: #f4924b;
@@ -124,6 +138,13 @@ button#newsletter-submit {
         margin-bottom: 20px;
         float: left;
         margin-left: 10px !IMPORTANT;
+    }
+    .newsletter .col-lg-6 {
+        width: 100%;
+        padding: 0px;
+    }
+    footer {
+        padding: 20px;
     }
 }
 
