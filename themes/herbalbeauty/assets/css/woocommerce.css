@@ -215,3 +215,14 @@ article.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.
     border-radius: 15px;
     border: 1px solid #b7b7b7;
 }
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images {
+    opacity: 1 !IMPORTANT;
+}
+
+.woocommerce-product-gallery__image img{
+    width: 95%!important;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
