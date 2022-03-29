@@ -22,6 +22,60 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+/* Header Style */
+.site-branding {
+    width: 30%;
+    float: left;
+    height: 100px;
+}
+
+header#masthead:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+nav#site-navigation {
+    float: left;
+    width: 55%;
+}
+
+header#masthead {
+    background: #fffbfb;
+    box-shadow: 0 0 9px rgb(0 0 0 / 0.31);
+    padding: 0 80px;
+    z-index: 1111;
+}
+
+#site-navigation button.menu-toggle {
+    display: none;
+}
+
+li.menu-item.menu-item-type-post_type.menu-item-object-page {
+    padding: 30px 10px;
+}
+
+li.menu-item.menu-item-type-post_type.menu-item-object-page a {
+    color: #333;
+    font-weight: 600;
+    transition: 0.43s;
+}
+
+.site-branding img {
+    height: 100px;
+}
+
+#site-navigation ul#primary-menu {
+    float: right;
+}
+
+#site-navigation ul#primary-menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
 /* custom footer css */
 footer {
     background: #fff8f2;
@@ -122,11 +176,74 @@ button#newsletter-submit {
 }
 
 
+/* header icon style */
+a.menu_icon {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 17px;
+    font-size: 20px;
+    color: #5b5b5b;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+a.menu_icon:hover {
+    background: #f4924b;
+    color: #fff;
+}
+
+/* aside sidebar style */
+aside#secondary {
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+    box-shadow: inset 0 0 9px rgb(0 0 0 / 22%);
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: #fffbf8;
+}
+
+label.wc-block-product-search__label {
+    font-weight: 700;
+    color: #707070;
+    font-size: 16px;
+}
+
+.wc-block-product-search__fields {
+    width: 100%;
+}
+
+.wc-block-product-search__fields input {
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+    box-shadow: 0 0 4px #0006;
+}
+
+button.wc-block-product-search__button {
+    background: #ffa462;
+    height: 40px;
+    color: #fff;
+    border-radius: 0 15px 15px 0;
+}
+
+ul.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 {
+    list-style: none;
+}
+
+ul.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 li a {
+    color: #d77e3e !important;
+}
+
+
 /* Responsive css */
 
 @media screen and (max-width : 991px){
     li.wc-block-grid__product {
         margin-right: 10px !important;
+    }
+    aside#secondary {
+        width: 90%;
     }
 }
 
