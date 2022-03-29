@@ -46,6 +46,7 @@
 		</div><!-- .site-branding -->
 				<a class="search_btn"><i class="fa fa-search"></i></a>
 				<a class="search_btn"><i class="fa fa-shopping-cart"></i></a>
+				<a class="search_btn"><i class="fa fa-user"></i></a>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'herbalbeauty' ); ?></button>
 			<?php
