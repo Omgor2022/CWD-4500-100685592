@@ -186,3 +186,33 @@ button.wsf-button.wsf-button-full.wsf-button-primary:hover {
     margin-bottom: 15px;
 }
 
+.wp-block-columns.has-tertiary-background-color.has-background .wp-block-column p strong {
+    display: block;
+    background: #f4924b;
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    margin-top: -5px;
+    border-radius: 20px 20px 10px 10px;
+}.woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1) {
+    clear: none;
+}
+.woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(5n+1) {
+    clear: left;
+}article.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-uncategorized {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 9px #d2d2d2;
+    margin-top: 40px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+article.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-uncategorized img {
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 1px solid #b7b7b7;
+}

@@ -10,7 +10,27 @@
  */
 
 ?>
-
+</div>
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="newsletter-text">
+						<h4>Newsletter</h4>
+						<p>Subscribe our newsletter and  keep update fo new product & Promotion</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form action="post">
+						<div class="newsletter-form">
+							<input id="newsletter-email" class="input-control has-white-background-color" type="email" placeholder="Your Email Address" required="required" >
+							<button id="newsletter-submit" type="submit" class="primary-btn has-primary-background-color has-grayish-black-color" value="Submit">subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 <footer>
 	<div id="footer-1">
 
